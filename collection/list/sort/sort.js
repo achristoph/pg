@@ -45,3 +45,8 @@ e.sort((a, b) => {
   return 0;
 });
 console.log(e);
+
+// 6. Sorting numeric array
+var f = [3, 1, 2];
+f.sort((a, b) => a - b);
+console.log(f);

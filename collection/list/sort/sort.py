@@ -30,3 +30,8 @@ print(d)
 e = ['2', '100', '3']
 e.sort(key=int)
 print(e)
+
+# 6. Sorting numeric array
+f = [3, 1, 2]
+f.sort()
+print(f)

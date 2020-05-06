@@ -27,6 +27,7 @@ main(List<String> args) {
     }
     return r;
   });
+
   print(c);
 
   // 3. Sorting array with in-place sort
@@ -43,4 +44,9 @@ main(List<String> args) {
   var e = ["2", "100", "3"];
   e.sort((a, b) => int.parse(a).compareTo(int.parse(b)));
   print(e);
+
+  // 6. Sorting numeric array
+  var f = [3, 1, 2];
+  f.sort();
+  print(f);
 }
