@@ -27,8 +27,8 @@ a.sort! {|a,b|  a.downcase <=> b.downcase}
 a.sort_by!(&:length)
 a.sort_by! { |e| e.length }
 p a
-p '===='
-p [{name:"BA"},{name:"A"}].sort_by { |e| p e[:name] }
+# multiple fields sort
+p [{ :name=>"BA", :count=>1},{:name=>"B",:count=>10},{:name=>"B",:count=>1}].sort_by { |e| [e[:name],e[:count]] }
 
 # 4. Sorting numeric array to string order
 d = [2, 100, 3]
