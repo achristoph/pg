@@ -1,0 +1,2 @@
+language = "bash"
+run = "echo Welcome to Polyglot Playground! Please run each file separately in its folder, for example: node sort.js inside collection/list/sort"

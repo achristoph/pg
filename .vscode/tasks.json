@@ -9,7 +9,8 @@
       "command": "ts-node ${file}",
       "presentation": {
         "echo": false,
-        "panel": "dedicated"
+        "panel": "dedicated",
+        "clear": true
       }
     },
     {
