@@ -9,7 +9,7 @@
       "command": "ts-node ${file}",
       "presentation": {
         "echo": false,
-        "panel": "dedicated",
+        "panel": "shared",
         "clear": true
       }
     },
@@ -19,7 +19,7 @@
       "command": "node ${file}",
       "presentation": {
         "echo": false,
-        "panel": "dedicated",
+        "panel": "shared",
         "clear": true
       }
     },
@@ -29,7 +29,7 @@
       "command": "python3 ${file}",
       "presentation": {
         "echo": false,
-        "panel": "dedicated",
+        "panel": "shared",
         "clear": true
       }
     },
@@ -39,7 +39,7 @@
       "command": "dart ${file}",
       "presentation": {
         "echo": false,
-        "panel": "dedicated",
+        "panel": "shared",
         "clear": true
       }
     },
@@ -49,7 +49,7 @@
       "command": "ruby ${file}",
       "presentation": {
         "echo": false,
-        "panel": "dedicated",
+        "panel": "shared",
         "clear": true
       }
     },
@@ -59,7 +59,7 @@
       "command": "go run ${file}",
       "presentation": {
         "echo": false,
-        "panel": "dedicated",
+        "panel": "shared",
         "clear": true
       }
     },
@@ -69,7 +69,7 @@
       "command": "java ${file}",
       "presentation": {
         "echo": false,
-        "panel": "dedicated",
+        "panel": "shared",
         "clear": true
       }
     }
