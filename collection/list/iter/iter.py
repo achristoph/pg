@@ -10,7 +10,7 @@ print("iterate list with index:")
 for i in range(len(numbers)):
     print(numbers[i], i)
 
-print("itereste with both index and value")
+print("iterate with both index and value")
 for i, e in enumerate(numbers):
     print(e, i)
 
@@ -27,3 +27,4 @@ sum = 0
 while sum < 3:
     sum += 1
 print(sum)
+

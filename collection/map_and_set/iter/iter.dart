@@ -1,6 +1,6 @@
 main(List<String> args) {
   var d = {"a": 1, "b": 2, "c": 3};
-  print("iterate dictionary with key, value, both");
+
   print("with keys");
   for (var k in d.keys) {
     print(k);

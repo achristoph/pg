@@ -9,6 +9,7 @@ for (const e of numbers) {
 
 numbers.forEach((e, i) => {
   log(e, i);
+  // break;  this is an illegal statement
 });
 
 log('iterate list with index:');
@@ -23,7 +24,13 @@ numbers.forEach((e) => {
 
 console.log('while loop');
 let sum = 0;
-while (sum < 3) {
+while (sum >= 0 && sum < 3) {
+  sum++;
+}
+console.log(sum);
+
+console.log('for loop alternative for while-like loop');
+for (let sum = 0; sum >= 0 && sum < 3; ) {
   sum++;
 }
 console.log(sum);

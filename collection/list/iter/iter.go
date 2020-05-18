@@ -21,8 +21,8 @@ func main() {
 		fmt.Println(numbers[i])
 	}
 
-	sum := 0
 	fmt.Println("while loop")
+	sum := 0
 	for sum < 3 {
 		sum++
 	}
