@@ -16,11 +16,12 @@ func main() {
 	fmt.Println("there is no enum type in Go. Create a list of consts with iota for sequential integer")
 	fmt.Println(Red, Green, Blue)
 	var d Color = 0
-	fmt.Print(d)
+	fmt.Println(d)
+
 	switch d {
 	case Red:
-		fmt.Println(" goes up.")
+		fmt.Println("Red")
 	default:
-		fmt.Println(" stays put.")
+		fmt.Println("Other Color")
 	}
 }

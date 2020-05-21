@@ -19,6 +19,6 @@ print("it can be enumerated")
 for c in Color:
     print(c)
 
-print("programmatic access")
+print("like Javascript, it can be accessed like Map")
 print(Color['red'])
 print(Color(1))

@@ -15,8 +15,9 @@ enum Answer {
 }
 
 console.log('enum name and value are printable');
-console.log(Color.Red.toString());
 console.log(Color.Red.valueOf());
+console.log(Color.Red);
+console.log(Color[Color.Red]);
 
 console.log('enum is hashable');
 let m = new Map();
