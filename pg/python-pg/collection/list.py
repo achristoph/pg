@@ -21,3 +21,9 @@ print([ord(s) for s in text])
 # generator expression
 print(tuple(ord(text) for text in text))
 print(array.array('I', (ord(text) for text in text)))
+
+l = [10, 20, 30, 40, 50, 60]
+print(l[:2], l[2:])
+
+s = 'bicycle'
+print(s[::3], s[::-1])
