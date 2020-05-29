@@ -1,5 +1,4 @@
 # https://docs.python.org/3.3/tutorial/datastructures.html#more-on-lists
-import array
 
 list1 = []
 list2 = ["cloudacademy"]
@@ -14,13 +13,6 @@ print("blah" in list4)
 
 list4[0] = "possible!!"
 list4.append("new item")
-
-text = 'ABC'
-# list comprehension
-print([ord(s) for s in text])
-# generator expression
-print(tuple(ord(text) for text in text))
-print(array.array('I', (ord(text) for text in text)))
 
 l = [10, 20, 30, 40, 50, 60]
 print(l[:2], l[2:])
