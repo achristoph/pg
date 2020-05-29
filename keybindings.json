@@ -1,0 +1,137 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "cmd+backspace",
+    "command": "editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.deleteLines",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+cmd+l",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+f",
+    "command": "-editor.action.formatDocument",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.terminal.runActiveFile"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorLangId == javascript",
+    "args": "node"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorLangId == typescript",
+    "args": "tsnode"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorLangId == python",
+    "args": "python"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorLangId == go",
+    "args": "go"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorLangId == dart",
+    "args": "dart"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorLangId == ruby",
+    "args": "ruby"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask",
+    "when": "editorLangId == java",
+    "args": "java"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.debug.start",
+    "when": "!inDebugMode"
+  },
+  {
+    "key": "cmd+r",
+    "command": "flutter.hotReload",
+    "when": "dart-code:flutterProjectLoaded && inDebugMode"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "flutter.fullRestart",
+    "when": "dart-code:flutterProjectLoaded && inDebugMode"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.debug.stepOver",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "alt+cmd+",
+    "command": "workbench.action.toggleMultiCursorModifier"
+  },
+  {
+    "key": "ctrl+shift+c",
+    "command": "git.checkout"
+  },
+  {
+    "key": "cmd+",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "cmd+e",
+    "command": "workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.continue",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "cmd+r",
+    "command": "flutter.hotReload",
+    "when": "dart-code:anyFlutterProjectLoaded && dart-code:service.reloadSources && inDebugMode"
+  },
+  {
+    "key": "ctrl+f5",
+    "command": "-flutter.hotReload",
+    "when": "dart-code:anyFlutterProjectLoaded && dart-code:service.reloadSources && inDebugMode"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "workbench.action.debug.restart",
+    "when": "inDebugMode"
+  },
+  {
+    "key": "shift+cmd+f5",
+    "command": "-workbench.action.debug.restart",
+    "when": "inDebugMode"
+  }
+]
