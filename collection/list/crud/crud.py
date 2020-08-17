@@ -1,5 +1,11 @@
 l = [1, 2, 3, 4, 5, 6]
 
+# create / initialize
+
+# update
+
+# delete
+
 print(l[:2] + l[2:])
 
 s = 'bicycle'

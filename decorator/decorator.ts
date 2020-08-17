@@ -1,4 +1,4 @@
-// decorator fo functions require to have three arguments
+// decorator for functions has three arguments
 function readonly(target: Object, key: string, descriptor: PropertyDescriptor) {
   console.log(target);
   console.log(key);
@@ -7,8 +7,8 @@ function readonly(target: Object, key: string, descriptor: PropertyDescriptor) {
   return descriptor;
 }
 
-//
-function log(args) {
+// decorator for classes
+function log(...args) {
   return function (target) {
     console.log('===');
     console.log(target, args);
@@ -16,32 +16,38 @@ function log(args) {
   };
 }
 
-function wrap() {
+function wrap(sep) {
   return function (
     target: Object,
     key: string,
     descriptor: PropertyDescriptor
   ) {
-    console.log('===');
-    console.log(target);
-    console.log('===');
+    console.log(target, key, descriptor.value);
+    const originalFn = descriptor.value;
+    descriptor.value = function (...args) {
+      console.log(sep);
+      const result = originalFn.apply(this, args);
+      console.log(sep);
+      return result;
+    };
   };
 }
 
 // class decorator
-@log('arguments')
+@log()
 class Moon {
   constructor(public radius: number) {}
 
   // @readonly
-  @wrap()
+  @wrap('xxx')
   circumference() {
     return 2 * Math.PI * this.radius;
   }
 }
 
 const moon = new Moon(100);
-moon.circumference = () => 100;
+// moon.circumference = () => 100;
+console.log(moon.circumference());
 // for (const key of moon) {
 //   console.log(key);
 // }
