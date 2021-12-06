@@ -1,10 +1,23 @@
+// literal constructor
 let n = [1, 2, 3];
+// creating a copy array with spread syntax
 let m = [...n];
+
 let set = new Set([1, 2, 3]);
 
 // Array constructor with a default value
-let a1 = Array(1).fill(0);
-a1.push(1, 2, 2, 3, 5);
+let a1 = Array(2).fill(0);
+// caution for default value with object like array since it refers to the same object
+a1 = Array(2).fill([]);
+// after the push below, the second element is also modified, so use Array.from instead for object type
+a1[0].push(1);
+
+// using the following form, the default objects are separate objects
+a1 = Array.from(Array(2), () => []);
+a1[0].push(1);
+
+// construct a multi-dimensional array
+a1 = Array.from(Array(3), () => Array(3));
 
 let a2 = Array(1, 2, 3);
 let a3 = Array(...a2);
@@ -12,7 +25,16 @@ let a3 = Array(...a2);
 // Array static methods
 let b1 = Array.from(n, (x) => x * 1);
 let b2 = Array([1, 2, 3]);
+// initialize array from a set
 let b3 = Array.from(set);
+// initialize array from a map
+let map = new Map([
+  [1, 1],
+  [2, 2],
+]);
+b3 = Array.from(map);
+
+// initialize with separate values
 let b4 = Array.of(1, 2, 3);
 
 // update array element
@@ -37,5 +59,5 @@ c.splice(2, 0, '2', '3');
 c.shift();
 // last
 c.pop();
-// in between
-c.splice(1, 1);
+// in between, on which index and specify how many
+c.splice(2, 1);
